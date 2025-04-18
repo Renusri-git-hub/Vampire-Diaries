@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lag="en">
+
+<head>
+    <title>Home|Vampire Diaries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <style>
+
+        h2 {
+            margin: auto;
+        }
+        #intro {
+            height: 150px;
+            width: 800px;
+            color: white;
+            margin: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:20px;
+            background-color:rgba(221, 70, 70, 0.5);
+            align-content: center;
+            border-width: 2px solid black;
+            border-radius: 15px 15px 15px 15px;
+            padding: 5px 5px;
+        }
+        #intro p{
+            padding-left:10px;
+            padding-right:5px;
+        }
+        #intro p::first-letter{
+            font-size:35px;
+            /* padding:3px; */
+            color:red;
+        }
+
+        #cast,
+        #names,
+        #aboutthem {
+            /* padding:50px; */
+            /* margin:50px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .cast {
+            border: red;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 15px 15px 15px 15px;
+            width: 200px;
+        }
+
+        .cast:hover {
+            height: 400px;
+            width: 250px;
+
+        }
+
+        #names {
+            color: white;
+        }
+
+        #names h3 {
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-content: center;
+            width: 200px;
+            border: 1px solid red;
+            border-radius: 15px 15px 15px 15px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #aboutthem>p {
+            height: px;
+            width: 300px;
+            border: 1px solid red;
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 15px 15px 15px 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 15px;
+        }
+        #choose{
+            color:white;
+            text-align:center;
+            font-size:40px;
+            background-color: rgb(209, 153, 153,0.5);
+            border:1px solid white;
+            border-radius:40px;
+        }
+        #choose button{
+            background-color: black;
+            color:white;
+            width:150px;
+            height:75px;
+            font-size:25px;
+            border:1px solid white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #choose button:hover{
+            width:160px;
+            height:85px;
+            font-size:28px;
+            box-shadow:0 0 15px black;
+            color:black;
+            background-color: grey;
+
+        }
+        /* a {
+            margin: 50%;
+        } */
+        #photos{
+            color:white;
+            text-align:center;
+            font-size:25px;
+            background-color: rgb(209, 153, 153,0.5);
+            border:1px solid white;
+            border-radius:40px;
+        }
+        #photos button{
+            /* border: 2px solid white;
+            border-radius: 5px;
+            background-color: rgba(72, 56, 56, 0.7);
+            color: white;
+            height: 30px;
+            font-size: 20px; */
+
+            background-color: black;
+            color:white;
+            width:200px;
+            height:75px;
+            font-size:25px;
+            border:1px solid white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        } 
+        #photos button:hover{
+            width:210px;
+            height:85px;
+            box-shadow:0 0 15px black;
+            color:black;
+            background-color: grey;
+            font-size:28px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="titlebar">
+        <a href="./Homepage.html" class="links" style="margin:auto">Home</a>
+        <h2 id="title">THE VAMPIRE DIARIES FAN PAGE</h2>
+        <a href="./about.html" class="links" style="margin:auto;">About</a>
+    </div>
+
+    <img src="./titlecard.jpg" height="150px" width="250px" style="position: absolute; left:30px">
+    <h1 style="color:white; font-family:Chiller;font-size:70px;text-align:center;">
+    THE VAMPIRE DIARIES
+    </h1>
+
+    <div id="intro">
+        <p>Your gateway to the supernatural world of Mystic Falls! Dive into the epic saga of love, betrayal, and
+            immortality as we explore the lives of Damon, Stefan, Elena, and more. Join us in unraveling the mysteries
+            of vampires, werewolves, and witches that make this story unforgettable!</p>
+    </div>
+<br><br>
+    <div id="cast">
+        <img src="./stefan.jpg" height="300px" class="cast">
+        <img src="./elena.jpg" height="300px" class="cast">
+        <img src="./damon.jpg" height="300px" class="cast">
+    </div>
+    <div id="names">
+        <h3>STEFAN SALVATORE</h3>
+        <h3>ELENA GILBERT</h3>
+        <h3>DAMON SALVATORE</h3>
+    </div>
+    <div id="aboutthem">
+        <p>162-year-old vampire with a brooding yet compassionate nature. Younger Salvatore brother, known for his
+            struggle to control his bloodlust. Prefers a moral approach to being a vampire, often feeding on animal
+            blood. His journey is one of redemption, sacrifice, and the battle between his humanity and his darker
+            instincts.</p>
+        <p>Kind-hearted and strong-willed young woman. Starts as a human but later transforms into a vampire, struggling
+            to balance her emotions and new reality. Elena is torn between her love for Stefan and her undeniable
+            connection with Damon. Her journey is one of self-discovery, resilience, and embracing her destiny in a
+            world filled with vampires, werewolves, and witches.</p>
+        <p>Charismatic and unpredictable older Salvatore brother, known for his sharp wit and ruthless nature. Initially
+            portrayed as a villain, he evolves into a complex anti-hero with a deep capacity for love and loyalty.
+            Embraces his vampire nature, often feeding on humans and making morally questionable choices. His journey is
+            one of redemption, sacrifice, and proving that even the most broken souls can find love and purpose.</p>
+    </div>
+    <div id="choose">
+        <p>🧛‍♂️🐺🧍‍♀️ "Are You One of Us? Uncover Your Mystic Identity!"</p>
+        <a href="./chooseteams.html"><button>Click here!!</button></a>
+    </div>
+    <br><br>
+    <div id=photos>
+       <p>Step into the shadows of Mystic Falls, where every frame tells a story of love, loss, and eternal bonds.
+        From epic romances to supernatural showdowns, explore the unforgettable moments that made The Vampire
+        Diaries a legend.
+        This gallery captures the heartbeats, heartbreaks, and haunting beauty of a world where forever is just the
+        beginning.</p>
+        <p><a href="./gallery.html"><button id="pho">View Gallery</button></a></p>
+    </div>
+</body>
+
+</html>

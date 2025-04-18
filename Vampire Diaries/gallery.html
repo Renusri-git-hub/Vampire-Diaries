@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./home.css">
+    <style>
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+            gap: 20px;
+        }
+
+        .gal {
+            border: 1px solid white;
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #img1 {
+            grid-column: 2/3;
+            grid-row: 1/4;
+            object-fit: cover;
+        }
+
+        #img2 {
+            grid-column: 5/6;
+            grid-row: 2/3;
+            object-fit: cover;
+        }
+
+        #img3 {
+            grid-column: 3/5;
+            grid-row: 2/4;
+            object-fit: cover;
+        }
+
+        #img4 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            object-fit: cover;
+        }
+
+        #img5 {
+            grid-column: 1/2;
+            grid-row: 2/4;
+            object-fit: cover;
+        }
+
+        #img6 {
+            grid-column: 3/6;
+            grid-row: 1/2;
+            object-fit: cover;
+        }
+
+        #img7 {
+            grid-column: 5/6;
+            grid-row: 3/4;
+            object-fit: cover;
+        }
+
+        #des {
+            color: white;
+            background-color: rgba(232, 160, 160, 0.5);
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: 25px;
+            margin: 30px 10px 30px 10px;
+            padding:10px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="titlebar">
+        <a href="./Homepage.html" class="links" style="margin:auto">Home</a>
+        <h2 id="title">THE VAMPIRE DIARIES FAN PAGE</h2>
+        <a href="./about.html" class="links" style="margin:auto;">About</a>
+    </div>
+    <div id="des">
+        
+        <p>Fall in love all over again with the timeless moments of Mystic Falls.
+            Because in this world, love never dies—it just becomes immortal.</p>
+        <p>Welcome to the darker side of Mystic Falls.
+            Every image in this gallery holds a secret, a shadow, or a story that refuses to fade.
+            From blood-soaked betrayals to eternal bonds, relive the intensity of a world ruled by passion and power.
+        </p>
+        <p>Calling all TVD fans—this one’s for you!
+            Dive into a gallery filled with iconic moments, steamy stares, and all the Salvatore drama you crave.
+            Grab some vervain and enjoy the nostalgia, because Mystic Falls never really lets you go.</p>
+        
+    </div>
+    <div id="gallery">
+        <img src="./c14.jpg" alt="" class="gal" id="img1">
+        <img src="./c2.jpg" alt="" class="gal" id="img2">
+        <img src="./c3.jpg" alt="" class="gal" id="img3">
+        <img src="./c4.jpg" alt="" class="gal" id="img4">
+        <img src="./c5.jpg" alt="" class="gal" id="img5">
+        <img src="./c6.jpg" alt="" class="gal" id="img6">
+        <img src="./c7.jpg" alt="" class="gal" id="img7">
+    </div>
+</body>
+
+</html>

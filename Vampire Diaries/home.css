@@ -1,0 +1,38 @@
+body{
+    background-image: url(./bg.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:initial;
+ 
+}
+.links {
+    color: white;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: None;
+    
+}
+.links:hover{
+    text-decoration:underline;
+}
+.links:active{
+    color:red;
+}
+#title {
+    font-size: 30px;
+    font-family: Chiller;
+    color: white;
+    text-align: center;
+}
+#titlebar {
+    background-color:black;
+    height:80px;
+    align-items:center;
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-around;
+    z-index: 1;
+    
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./home.css">
+    <title>About</title>
+    <style>
+        #cast {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+            grid-template-rows: 230px 230px;
+            justify-content: space-around;
+            justify-items: center;
+            /* border-bottom: 1px solid white; */
+            background-color: rgba(18, 18, 18, 0.5);
+            border: 1px solid white;
+            border-radius: 15px;
+            padding-top: 20px;
+            position: relative;
+        }
+
+        #cast img {
+            height: 150px;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 15px;
+            object-fit: fill;
+            /* justify-items:center; */
+
+        }
+
+        #cast img:hover {
+            height: 170px;
+            width: 170px;
+            box-shadow: 0 0 15px crimson;
+        }
+
+        p,
+        h1 {
+            color: white;
+        }
+
+        p {
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        #stats {
+            background-color: rgba(18, 18, 18, 0.5);
+            border: 1px solid white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            /* padding:5px; */
+            /* border-bottom: 1px solid white; */
+        }
+
+        #stats div>p:first-child {
+            font-size: xx-large;
+        }
+
+        li {
+            color: white;
+        }
+
+        #details {
+            background-color: rgba(18, 18, 18, 0.5);
+            border: 1px solid white;
+            border-radius: 15px;
+            /* display:grid;
+            grid-template-columns: 2fr 2fr;
+            /* flex-wrap:wrap; */
+            /* gap:10px; */
+        }
+
+        .deets {
+            background-color: rgba(124, 113, 113, 0.3);
+            border: 1px solid white;
+            border-radius: 15px;
+            margin: 15px;
+            padding-left: 30px;
+        }
+
+        .deets p {
+            font-size: medium;
+        }
+
+        .deets>p:first-child {
+            font-size: larger;
+        }
+
+        #story {
+            background-color: rgba(124, 113, 113, 0.3);
+            border: 1px solid white;
+            border-radius: 15px;
+        }
+
+        #fans {
+            background-color: rgba(124, 113, 113, 0.3);
+            border: 1px solid white;
+            border-radius: 15px;
+        }
+
+        .react p {
+            font-size: medium;
+        }
+
+        .react>p:first-child {
+            font-size: larger;
+        }
+
+        .react {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            /* align-items:center; */
+        }
+
+        h2 {
+            margin: auto;
+        }
+
+        /* #item1{
+            position:absolute;
+            visibility:hidden;
+            color:white;
+            border:1px solid white;
+            font-size:larger;
+        }
+        #i1:hover #item1{
+            position:absolute;
+            visibility:visible;
+            left: 150px;
+            top: 290px;
+        } */
+        #item1,
+        #item2,
+        #item3,
+        #item4,
+        #item5,
+        #item6,
+        #item6,
+        #item7,
+        #item8,
+        #item9,
+        #item10 {
+            visibility: hidden;
+            position: absolute;
+            color: white;
+            border: 1px solid white;
+            font-size: larger;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgba(230, 6, 6, 0.5);
+        }
+
+        #img1:hover #item1 {
+            visibility: visible;
+            left: 150px;
+            top: 100px;
+            box-shadow: 0 0 15px crimson;
+        }
+
+        #img2:hover #item2 {
+            visibility: visible;
+            left: 450px;
+            top: 100px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img3:hover #item3 {
+            visibility: visible;
+            left: 750px;
+            top: 100px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img4:hover #item4 {
+            visibility: visible;
+            left: 1050px;
+            top: 100px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img5:hover #item5 {
+            visibility: visible;
+            left: 1350px;
+            top: 100px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img6:hover #item6 {
+            visibility: visible;
+            left: 150px;
+            top: 330px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img7:hover #item7 {
+            visibility: visible;
+            left: 450px;
+            top: 330px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img8:hover #item8 {
+            visibility: visible;
+            left: 750px;
+            top: 330px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img9:hover #item9 {
+            visibility: visible;
+            left: 1050px;
+            top: 330px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #img10:hover #item10 {
+            visibility: visible;
+            left: 1350px;
+            top: 330px;
+            box-shadow: 0 0 15px crimson;
+
+        }
+
+        #cast p {
+            text-align: center;
+        }
+
+        #story {
+            padding-left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="titlebar">
+        <a href="./Homepage.html" class="links" style="margin:auto">Home</a>
+        <h2 id="title">THE VAMPIRE DIARIES FAN PAGE</h2>
+        <a href="./about.html" class="links" style="margin:auto;">About</a>
+    </div>
+    <h1>Cast</h1>
+    <div id="cast">
+
+        <div id="img1">
+            <img src="./damon cast.jpg" alt="Damon" class="cast" id="i1">
+            <p class="cast">Damon Salvatore</p>
+            <p id="item1">Ian Somerhalder</p>
+        </div>
+        <div id="img2">
+            <img src="./stefan cast.jpg" alt="Stefan" class="cast" id="2">
+            <p class="cast">Stefan Salvatore</p>
+            <p id="item2">Paul Wesley</p>
+        </div>
+        <div id="img3">
+            <img src="./elena cast.jpg" alt="Elena" class="cast">
+            <p class="cast">Elena Gilbert</p>
+            <p id="item3">Nina Dobrev</p>
+        </div>
+        <div id="img4">
+            <img src="./candice.jpg" alt="Candice" class="cast">
+            <p class="cast">Caroline Forbes</p>
+            <p id="item4">Candice King</p>
+        </div>
+        <div id="img5">
+            <img src="./bonnie.jpg" alt="Bonnie" class="cast">
+            <p class="cast">Bonnie Bennett</p>
+            <p id="item5">Kat Graham</p>
+        </div>
+        <div id="img6">
+            <img src="./zack.jpg" alt="Matt" class="cast">
+            <p class="cast">Matt Donovan</p>
+            <p id="item6">Zach Roerig</p>
+        </div>
+        <div id="img7">
+            <img src="./tyler.jpg" alt="Tyler" class="cast">
+            <p class="cast">Tyler Lockwood</p>
+            <p id="item7">Michael Trevino</p>
+        </div>
+        <div id="img8">
+            <img src="./alaric.jpg" alt="Alaric" class="cast">
+            <p class="cast">Alaric Saltzman</p>
+            <p id="item8">Matt Davis</p>
+        </div>
+        <div id="img9">
+            <img src="./klaus.jpg" alt="Klaus" class="cast">
+            <p class="cast">Klaus Mikaelson</p>
+            <p id="item9">Joseph Morgan</p>
+        </div>
+        <div id="img10">
+            <img src="./elijah.jpg" alt="Elijah" class="cast">
+            <p class="cast">Elijah Mikaelson</p>
+            <p id="item10">Daniel Gillies</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <h1>Statistics</h1>
+    <div id="stats">
+        <div id="season">
+            <p>8</p>
+            <p>Total seasons</p>
+        </div>
+        <div id="epi">
+            <p>171</p>
+            <p>Total episodes</p>
+        </div>
+        <div id="viewes">
+            <p>4.91M</p>
+            <p>Viewers</p>
+        </div>
+        <div id="runtime">
+            <p>119.7 Hours</p>
+            <p>Total Run Time</p>
+        </div>
+    </div>
+    <br>
+    <h1>Details</h1>
+    <div id="details">
+        <div class="deets">
+            <p>Genre:</p>
+            <p>Supernatural, Drama, Fantasy, Horror, Romance</p>
+        </div>
+        <div class="deets">
+            <p>Developed by:</p>
+            <p>Kevin Williamson & Julie Plec</p>
+        </div>
+        <div class="deets">
+            <p>Based on:</p>
+            <p>The Vampire Diaries book series by L.J. Smith</p>
+        </div>
+        <div class="deets">
+            <p>Production Companies:</p>
+            <ol>
+                <li>Alloy Entertainment</li>
+                <li>Outerbanks Entertainment</li>
+                <li>Warner Bros. Television</li>
+                <li>CBS Television Studios</li>
+            </ol>
+        </div>
+        <div class="deets">
+            <p>Filming Location:</p>
+            <p>Covington, Georgia, USA (used as Mystic Falls)</p>
+        </div>
+        <div class="deets">
+            <p>Original Run:</p>
+            <p>September 10, 2009 – March 10, 2017</p>
+        </div>
+        <div class="deets">
+            <p>Network:</p>
+            <p>The CW</p>
+        </div>
+    </div>
+    <h1>Story Line</h1>
+    <div id="story">
+        <p>The Vampire Diaries follows Elena Gilbert, a high school girl who falls in love with a mysterious vampire,
+            Stefan Salvatore.</p>
+        <p>As she gets drawn deeper into the supernatural world, she also develops a complicated bond with Stefan’s
+            dangerous brother, Damon.</p>
+        <p>The series explores love, loss, betrayal, and redemption in the town of Mystic Falls, which is filled with
+            vampires, witches, werewolves, and more.</p>
+        <p>Elena discovers shocking truths about her past and her connection to an ancient doppelgänger curse.</p>
+        <p>As alliances shift and threats emerge, the characters fight to protect their loved ones and themselves from
+            dark forces.</p>
+    </div>
+    <h1>Why fans love it so much</h1>
+    <div id="fans">
+        <div class="react">
+            <p>Addictive</p>
+            <p>You can't stop watching once you start!</p>
+        </div>
+        <div class="react">
+            <p>Emotional </p>
+            <p>Full of love, loss, and intense feelings.</p>
+        </div>
+        <div class="react">
+            <p>Thrilling </p>
+            <p>Constant twists, suspense, and action.</p>
+        </div>
+        <div class="react">
+            <p>Romantic </p>
+            <p>Iconic love stories and unforgettable couples.</p>
+        </div>
+        <div class="react">
+            <p>Mysterious </p>
+            <p>Secrets, legends, and supernatural lore.</p>
+        </div>
+        <div class="react">
+            <p>Immersive </p>
+            <p>You feel like you're part of Mystic Falls.</p>
+        </div>
+        <div class="react">
+            <p>Timeless </p>
+            <p>A story fans return to again and again.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

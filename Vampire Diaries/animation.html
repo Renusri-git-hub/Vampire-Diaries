@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        #container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+.name {
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute; 
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border: 2px solid white;
+    background: radial-gradient(red, black);
+}
+
+        /* .name {
+            background-color: red;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            animation-name: spin;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            border:2px solid white;
+            background:radial-gradient(red,black);
+        } */
+
+        /* @keyframes spin {
+            0%,100% {
+                top:0vh;
+                left:0vw;
+            }
+
+            25%{
+                top:80vh;
+                left:0vw;
+            }
+            50%{
+                top:80vh;
+                left:85vw;
+            }
+            75%{
+                top:0vh;
+                left:85vw;
+            } 
+        }*/
+        @keyframes spin {
+    0%, 100% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: calc(100% - 200px);
+        left: 0;
+    }
+    50% {
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+    }
+    75% {
+        top: 0;
+        left: calc(100% - 200px);
+    }
+}
+        body{
+            background:linear-gradient(black,red);
+            box-sizing: border-box;
+            margin: 0;
+
+        }
+       
+        #text{
+            background-color: black;
+            height:50px;
+            width:800px;
+            margin:auto;
+            border:1px solid white;
+            box-shadow:1px 1px 3px white;
+            border-radius:30px;
+
+        }
+        #text p{
+            color:white;
+            text-align:center;
+            padding-bottom:15px;
+            font-size:larger;
+            /* text-shadow:white; */
+            /* align-content:center; */
+        }
+        .name p{
+            padding:50px;
+            padding-top:25px;
+            color:black;
+            font-size:30px;
+            font-weight: bold;
+        }
+        a:link{
+            text-decoration:none;
+        }
+        a>div{
+            height:100vh;
+        }
+        a:active{
+            cursor:wait;
+        }
+        img{
+            height:300px;
+            width:500px;
+            border:1px solid white;
+            border-radius:30px;
+        }
+#img{
+    display:flex;
+    justify-content:center;
+}
+
+    </style>
+</head>
+
+<body>
+    <a href="./Homepage.html">
+        <div id="container"> <!-- ADDED CONTAINER -->
+            <div class="name">
+                <p>The Vampire Diaries</p>
+            </div>
+      
+            <div id="text">
+                <p>Click anywhere to view webpage</p>
+            </div>
+            <div id="img"><img src="./homepic.jpg"></div>
+
+        </div>
+    </a>
+</body>
+
+
+</html>
